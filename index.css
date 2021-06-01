@@ -1,0 +1,172 @@
+#leftCol {
+  background-color: #333333;
+    position: fixed;
+    width: 282px;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+}
+/* fullscreen */
+@media (min-width: 580px) {
+  #RightCol {
+    margin-left: 282px;
+  }
+  #leftCol{
+    display:block;
+  }
+  .menu{
+    display:none;
+  }
+  .icon{
+  width: 30px;
+  height: 30px;
+  margin-top: 17px;
+  margin-bottom: 26px;
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+  .text,.items{
+    font-size:22px;
+}
+
+.text2{
+  font-size: 40px;
+}
+
+}
+/* mobile */
+@media (max-width: 579px) {
+  #RightCol {
+    margin-left: 0%;
+  }
+  #leftCol{
+    display: none;
+  }
+  .menu{
+    display:block;
+  }
+  .icon{
+  width: 20px;
+  height: 20px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
+  .text,.items{
+    font-size:18px;
+  }
+
+
+  .text2{
+  font-size: 25px;
+  }
+
+}
+
+
+
+.menu{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 3px solid black;
+  position: fixed;
+  top: 2px;
+  left:2px;
+}
+#profile{
+  /* margin:30px 0 15px 29px; */
+  display: block;
+  margin-top: 4%;
+  margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+
+  height: 70%;
+  width: 70%;
+  border: 6px solid #4F4F4F;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+}
+/* .icon{
+width: 30px;
+height: 30px;
+margin-top: 17px;
+margin-bottom: 26px;
+margin-left: 20px;
+margin-right: 20px;
+
+} */
+/* h1,h3{
+  font-size: 28px;
+} */
+footer{
+  margin-top: 30px;
+}
+.text,.items{
+color:  #F2F2F2;
+font-family: Margarine;
+font-style: normal;
+/* text-align: center; */
+/* margin-bottom: 26px; */
+
+}
+
+.container {
+  position: relative;
+  /* text-align: center;
+  color: black; */
+}
+.container .content {
+  position: absolute;
+  top:210px;
+  color: black;
+  width: 100%;
+  padding: 20px;
+}
+.avatar{
+width: 100%;
+height: 500px;
+opacity: 0.6;
+}
+.text2{
+
+  margin: 2% 0 0% 5%;
+  font-family: Margarine;
+  /* font-size: 50px; */
+}
+.text3{
+  margin-top: 4%;
+  font-family: Margarine;
+  font-size: 36px;
+  color: black;
+  text-align: center;
+}
+.text4{
+  font-family: Margarine;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+/* .container{
+  background-image: url("assets/avatar.jpg");
+   background-size: cover;
+   position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+
+
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+} */
