@@ -14,6 +14,7 @@
   #leftCol{
     display:block;
   }
+
   .menu{
     display:none;
   }
@@ -46,6 +47,12 @@
   .menu{
     display:block;
   }
+  .image{
+    display:none;
+  }
+  .edu{
+    text-align: center;
+  }
   .icon{
   width: 20px;
   height: 20px;
@@ -62,6 +69,14 @@
 
   .text2,.text3{
   font-size: 25px;
+  }
+  .text4{
+
+     text-align:justify;
+    /* display: flex; */
+  }
+  ul{
+    margin: 0 auto;
   }
 
 }
@@ -133,6 +148,15 @@ width: 100%;
 height: 500px;
 opacity: 0.6;
 }
+.image{
+  padding-left: 5px;
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+
+}
+
 .text2{
 
   margin: 2% 0 0% 5%;
@@ -149,40 +173,20 @@ opacity: 0.6;
 .text6{
   font-family: Roboto Condensed;
   color: #3D3D3D;
-  text-align: center;
+  /* text-align: center; */
 }
 .text4{
   font-family: Roboto Condensed;
   color: #3D3D3D;
-  text-align:justify;
-  /* font-size: 20px; */
 }
 .text5{
   color: #959595;
   font-family:Roboto;
-  text-align: center;
+  /* text-align: center; */
   font-size: 17px;
 }
+
 ul {
   display: table;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
-/* .container{
-  background-image: url("assets/avatar.jpg");
-   background-size: cover;
-   position: relative;
-    height: 80vh;
-    width: 100%;
-    display: flex;
-
-
-}
-.container::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.6);
-} */
