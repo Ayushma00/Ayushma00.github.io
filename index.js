@@ -90,8 +90,15 @@ $(".menu").click(function () {
 // when menu is clicked
   if(flag===0){
     $('#leftCol').css("display","block");
-    $('#RightCol').css("margin-left","282px");
+    $('#RightCol').css("margin-left","0px");
+      $('#RightCol').css("z-index","1");
+      $('#leftCol').css("z-index","100");
+      $('.menu').css("z-index","100");
+
       $('.text2').css("font-size","25px");
+      $(window).scroll(function(){
+        $('#leftCol').css("display","none");
+  });
 
       flag=1;
   }

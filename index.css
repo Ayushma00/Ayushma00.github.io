@@ -42,6 +42,7 @@
 @media (max-width: 779px) {
   #RightCol {
     margin-left: 0%;
+    z-index: 1;
   }
   #leftCol{
     display: none;
