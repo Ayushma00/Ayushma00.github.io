@@ -1,5 +1,22 @@
 var myIndex = 0;
+function myFunction(ids) {
+var x = document.getElementById(`${ids}`);
+x.style.display === "none"
+if (x.style.display === "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
+}
 document.addEventListener('DOMContentLoaded', function() {
+  var descrip = document.getElementsByClassName('description');
+  // console.log(descrip.length);
+  for(let i=0;i<descrip.length;i++){
+    console.log(descrip[i]);
+    descrip[i].style.display="none";
+  }
+
+
   var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
