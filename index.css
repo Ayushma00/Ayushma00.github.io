@@ -6,10 +6,14 @@
     top: 0;
     bottom: 0;
 }
+body{
+  background-color: #C0C0C0;
+}
 /* fullscreen */
 @media (min-width: 780px) {
   #RightCol {
     margin-left: 282px;
+
   }
   #leftCol{
     display:block;
@@ -41,7 +45,7 @@
 /* mobile */
 @media (max-width: 779px) {
   #RightCol {
-    margin-left: 0%;
+    margin-left: 0%; */
     z-index: 1;
   }
   #leftCol{
@@ -122,12 +126,12 @@ font-style: normal;
 
 }
 
-.container {
+.containers {
   position: relative;
-  /* text-align: center;
-  color: black; */
+  /* text-align: center; */
+  color: black;
 }
-.container .content {
+.containers .content {
   position: absolute;
   top:210px;
   color: black;
@@ -149,7 +153,7 @@ opacity: 0.6;
 }
 
 .text2{
-
+  color:  #000044;
   margin: 2% 0 0% 5%;
   font-family: Margarine;
   /* font-size: 50px; */
@@ -158,20 +162,24 @@ opacity: 0.6;
   margin-top: 4%;
   font-family: Margarine;
   /* font-size: 36px; */
-  color: #121212;
+  color:  #000044;
+  /* color: #121212; */
   text-align: center;
 }
 .text6{
   font-family: Roboto Condensed;
-  color: #3D3D3D;
+  color:  #000044;
+  /* color: #3D3D3D; */
   /* text-align: center; */
 }
 .text4{
   font-family: Roboto Condensed;
-  color: #3D3D3D;
+  color:  #000044;
+  /* color: #3D3D3D; */
 }
 .text5{
-  color: #959595;
+  color: #003366;
+  /* color: #959595; */
   font-family:Roboto;
   /* text-align: center; */
   font-size: 17px;
@@ -206,3 +214,17 @@ button:hover {
   background-color: #959595;/* Green */
   color: white;
 }
+.box{
+  background-color:#E6E6FA;
+  -webkit-box-shadow: 0 0 5px #123;
+  box-shadow: 0 0 5px #123;
+}
+.title{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.description{
+  color:  #32127A;
+}
+
+/* <img  src="assets/p1.jpg" alt=""> */
