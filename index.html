@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="bootstrap.css" rel="stylesheet" >
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  <script src="jquery.js" charset="utf-8"></script>
   <script src="index.js" charset="utf-8"></script>
   <title> Aayushma Pant</title>
 </head>
@@ -141,7 +141,7 @@
       <div class="rounded p-3 mb-5 border-bottom pb-1 box">
         <div class="ps-5  ">
           <h3 class="text6">Smart Cheli</h3>
-          <h4 class="text6">Educator <button onclick="myFunction('myDropdown1')" class="dropdown"><i class="arrow down dropdown"></i></button> </h4>
+          <h4 class="text6">Educator <button onclick="myFunction('myDropdown1','arrow1')" class="dropdown"><i id="arrow1" class="arrow down dropdown"></i></button> </h4>
           <h5 class="text5">2021 April- Present</h5>
 
           <div class="description" id="myDropdown1">
@@ -155,7 +155,7 @@
       <div class=" rounded p-3 mb-5 border-bottom pb-1 box">
         <div class="ps-5  ">
           <h3 class="text6">Alpha AI</h3>
-          <h4 class="text6">Data Science Intern <button onclick="myFunction('myDropdown2')" class="dropdown"><i class="arrow down dropdown"></i></button> </h4>
+          <h4 class="text6">Data Science Intern <button onclick="myFunction('myDropdown2','arrow2')" class="dropdown"><i id="arrow2" class="arrow down dropdown"></i></button> </h4>
           <h5 class="text5">2020 Nov-2021 Mar</h5>
           <div class="description" id="myDropdown2">
             <ul class="text4">
@@ -171,7 +171,7 @@
       <div class=" rounded p-3 mb-5 border-bottom pb-1 box">
         <div class="ps-5  ">
           <h3 class="text6"> THE SPARKs FOUNDATION</h3>
-          <h4 class="text6">Data Science Intern <button onclick="myFunction('myDropdown3')" class="dropdown"><i class="arrow down dropdown"></i></button></h4>
+          <h4 class="text6">Data Science Intern <button onclick="myFunction('myDropdown3','arrow3')" class="dropdown"><i id="arrow3" class="arrow down dropdown"></i></button></h4>
           <h5 class="text5">2020 Oct- 2020 Dec</h5>
           <div class="description" id="myDropdown3">
             <ul class="text4">
@@ -187,7 +187,7 @@
       <div class=" rounded p-3 mb-5 border-bottom pb-1 box">
         <div class="ps-5  ">
           <h3 class="text6">ACEED Atharva Initiation Private ltd</h3>
-          <h4 class="text6">Research Intern <button onclick="myFunction('myDropdown4')" class="dropdown"><i class="arrow down dropdown"></i></button></h4>
+          <h4 class="text6">Research Intern <button onclick="myFunction('myDropdown4','arrow4')" class="dropdown"><i id="arrow4" class="arrow down dropdown"></i></button></h4>
           <h5 class="text5">2020 Aug-2020 Oct</h5>
           <div class="description" id="myDropdown4">
             <ul class="text4">
@@ -214,7 +214,7 @@
       <h1 class="text4 ps-5 pb-3">Artificial Intelligence Projects</h1>
       <div class="container px-5">
         <div class="row">
-          <div class="col rounded border box p-0 m-3">
+          <div class=" col-sm-5 rounded border box p-0 m-3">
             <img class="p-0" width="100%" src="assets/p1.jpg" alt="">
             <p class="text4 ps-2 title"> Nepali Voice Controlled home automation</p>
             <p class="text5 ps-2" style="margin-bottom: 0px;">Aims in using Nepali speech for automating home applications, inspired by speech recognition technology in Alexa...</p>
@@ -222,7 +222,7 @@
           </div>
 
 
-          <div class="col rounded border p-0 m-3 box">
+          <div class=" col-sm-5 rounded border p-0 m-3 box">
             <img class="p-0" width="100%" src="assets/p2.jpg" alt="">
             <p class="text4 p-2 title">AI chatbot</p>
             <p class="text5 ps-2" style="margin-bottom: 0px;">It is a web application that uses an AI to answer queries on relevant topics like agriculture, health..
@@ -231,7 +231,7 @@
 
           </div>
 
-          <div class="col  rounded border m-3 box p-0">
+          <div class=" col-sm-5  rounded border m-3 box p-0">
             <img class="p-0" width="100%" src="assets/p3.jpg" alt="">
             <p class="text4 p-2 title">Sudoku Solver</p>
             <p class="text5 ps-2" style="margin-bottom: 0px;">It fetches an image of unsolved sudoku and solves using the OpenCV, CNN and backtracking algorithms.
@@ -243,10 +243,10 @@
       </div>
 
 
-      <h1 class="text4 ps-5 pb-3">Blogs</h1>
+      <h1 class="text4 ps-5 pb-3 mt-3">Blogs</h1>
       <div class="container px-5">
         <div class="row">
-          <div class="col rounded border box p-0 m-3">
+          <div class="col-sm-5 rounded border box p-0 m-3">
             <img class="p-0" width="100%" src="assets/b1.jpg" alt="">
             <p class="text4 ps-2 title"> Quantum Computing for Machine Learning</p>
             <p class="text5 ps-2" style="margin-bottom: 0px;">Have you ever wondered about beating the time? And solving a large number of mathematical matrices, data and queries within just a…</p>
@@ -254,7 +254,7 @@
           </div>
 
 
-          <div class="col rounded border p-0 m-3 box">
+          <div class="col-sm-5 rounded border p-0 m-3 box">
             <img class="p-0" width="100%" src="assets/b2.png" alt="">
             <p class="text4 p-2 title">Principal Component Analysis (PCA) From Scratch</p>
             <p class="text5 ps-2" style="margin-bottom: 0px;">Data of higher dimensions tend to create sparse matrixes and make it much more difficult to compute, analyze and visualize. It is therefore…
@@ -263,7 +263,7 @@
 
           </div>
 
-          <div class="col  rounded border m-3 box p-0">
+          <div class="col-sm-5  rounded border m-3 box p-0">
             <img class="p-0" width="100%" src="assets/b3.png" alt="">
             <p class="text4 p-2 title">Gradient Descent in Machine Learning
 </p>

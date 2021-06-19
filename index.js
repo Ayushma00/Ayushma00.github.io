@@ -1,18 +1,25 @@
 var myIndex = 0;
-function myFunction(ids) {
+function myFunction(ids,arrowids) {
 var x = document.getElementById(`${ids}`);
-x.style.display === "none"
+
 if (x.style.display === "none") {
+   $(`#${arrowids}`).removeClass('down')
+   $(`#${ids}`).fadeIn(1000);
+   $(`#${arrowids}`).addClass('up')
   x.style.display = "block";
+
 } else {
-  x.style.display = "none";
+   $(`#${ids}`).fadeOut(500);
+   $(`#${arrowids}`).removeClass('up')
+   $(`#${arrowids}`).addClass('down')
+  // x.style.display = "none";
 }
 }
 document.addEventListener('DOMContentLoaded', function() {
   var descrip = document.getElementsByClassName('description');
   // console.log(descrip.length);
   for(let i=0;i<descrip.length;i++){
-    console.log(descrip[i]);
+
     descrip[i].style.display="none";
   }
 
@@ -69,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
     };
+
     let flag=0;
     $("a[href^='#']").click(function(e) {
         e.preventDefault();
