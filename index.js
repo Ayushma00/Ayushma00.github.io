@@ -117,5 +117,39 @@ $(".menu").click(function () {
       flag=0;
   }
 });
+let current_id=undefined;
+var delta=5;
+var lastScrollTop=window.pageYOffset || document.documentElement.scrollTop;
+$("#RightCol").on('mousewheel DOMMouseScroll touchmove', function(e) {
+var currentscroll=window.pageYOffset || document.documentElement.scrollTop ;
+if(Math.abs(lastScrollTop - currentscroll) >= delta){
+ if(currentscroll>lastScrollTop){
+   var scrollTop = $(window).scrollTop();
+   var midplace = $(window).innerHeight()*0.85;
 
+   $(".findByScroll").each(function(index) {
+     var elemHeight = $(this).height();
+     var elementTop = $(this).position().top;
+
+
+     if (scrollTop + midplace > elementTop && scrollTop + midplace < elementTop + elemHeight) {
+
+       if (current_id !== $(this).attr("id")) {
+           current_id = $(this).attr("id");
+         if (current_id !== undefined) {
+
+     $(this).animate({ opacity: '0', height:'0px'}, 0);
+     $(this).animate({ opacity: '0.5' ,height:'50%'},500);
+     $(this).animate({ opacity: '1',height:'100%'}, 1500);
+         }
+       }
+
+
+     }
+   });
+ }
+ lastScrollTop= currentscroll <= 0 ? 0 : currentscroll;
+ }
+
+ });
 });
