@@ -841,7 +841,11 @@ ul.bulleted_list_small li {
   line-height: 1.6;
 }
 
-
+.modal-text {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
 /**
  * skills 
  */

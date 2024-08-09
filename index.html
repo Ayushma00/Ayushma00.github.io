@@ -15,6 +15,7 @@
   <!--
     - custom css link
   -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!--
@@ -23,6 +24,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -672,31 +677,71 @@
               </a>
             </li>
 
-            <!-- <li class="project-item  active" data-filter-item data-category="applications">
-               <a href="https://github.com/Ayushma00/django-mail-system-clone" target="_blank">
-                
-                 <a href="./project1.html" target="_blank">
-                
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/Ayushma00/django-mail-system-clone" target="_blank">
+
+                <a style="cursor: pointer;" data-toggle="modal" data-target="#ImageStitchingModal">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/project10.png" alt="orizon" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Image Stitching</h3>
+
+                  <p class="project-category">Applications</p>
+
+                </a>
+            </li>
+
+
+
+            <div class="modal fade" id="ImageStitchingModal">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content" style="background-color: hsl(240, 1%, 17%); font-family: 'Poppins', sans-serif;">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title" style="color: hsl(45, 54%, 58%);">Image Stitching</h4>
+                    <button type="button" style="color: hsl(45, 54%, 58%);" class="close" data-dismiss="modal">&times;</button>
                   </div>
 
-                  <img src="./assets/images/project2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Image Stitching</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li> -->
-
-            
-
-
-
-
+                  <!-- Modal body -->
+                  <div class="modal-body" style="color: hsl(0, 0%, 98%);">
+                    <div class="modal-text">
+                      Image stitching is the process of combining multiple overlapping images to create a single, 
+                      seamless panoramic image or a high-resolution composite.
+                      
+                      Image stitching is widely used for applications such as aerial surveillance, panorama creation, and disaster identification. 
+                      To effectively leverage this technique for disaster identification and rapid surveillance, it's essential to develop a fast and efficient stitching mechanism. 
+                      This project aims to create and implement a streamlined stitching pipeline that delivers high-quality 2D orthomosaic views quickly and georeferences it, offering better performance compared to existing systems like OpenDroneMap, 
+                      Pix4D Mapper, PhotoScan, and OpenMVG, which can take hours to produce results.
+                    
+                      <ul class="bulleted_list ">
+                        <li>Optimized Feature Matching: Implementing or improving algorithms like ORB, SIFT, or SURF for faster and more accurate feature matching across images.</li>
+                        <li>Parallel Processing: Utilize GPU acceleration or multi-core CPU processing to perform tasks like feature detection, matching, and warping simultaneously.</li>
+                        <li>Efficient Warping and Blending: Develop or refine warping and blending techniques that reduce computational complexity while maintaining high-quality results.</li>
+                        <li>Memory Management: Efficiently manage memory to handle large datasets, especially in high-resolution aerial imagery, to prevent bottlenecks.</li>
+                        <li>Georeferencing the Result: Overlay the stitched image/video on the world map.</li>
+                      </ul>
+                    
+                      <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                        <div style="position: relative; width: 100%; max-width: 420px; padding-bottom: 56.25%; margin: 0 auto;">
+                          <iframe src="https://www.youtube.com/embed/PGRH78efsdw" style="position: absolute; top: 0; left: 0; width: 100%; height: 80%; border: none;"></iframe>
+                        </div>
+                        <div style="position: relative; width: 100%; max-width: 420px; padding-bottom: 56.25%; margin: 0 auto;">
+                          <iframe src="https://www.youtube.com/embed/KLRvLQk8pXQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 80%; border: none;"></iframe>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 
@@ -821,7 +866,7 @@
       </article>
 
 
-      
+
 
 
       <!--
@@ -839,7 +884,8 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="https://aayushma1.medium.com/from-pixels-to-photorealism-the-art-of-3d-gaussian-splatting-fdcdc1a9ac21" target="_blank">
+              <a href="https://aayushma1.medium.com/from-pixels-to-photorealism-the-art-of-3d-gaussian-splatting-fdcdc1a9ac21"
+                target="_blank">
 
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog5.png" alt="Design conferences in 2022" loading="lazy">
@@ -856,8 +902,10 @@
                   <h3 class="h3 blog-item-title">From Pixels to Photorealism: The Art of 3D Gaussian Splatting</h3>
 
                   <p class="blog-text">
-                    Imagine watching fireflies glow in a dark field at night. Each firefly emits a light that is brightest at its 
-                    position and fades as you move away. These glowing areas can be represented using 3D Gaussians. When combined, 
+                    Imagine watching fireflies glow in a dark field at night. Each firefly emits a light that is
+                    brightest at its
+                    position and fades as you move away. These glowing areas can be represented using 3D Gaussians. When
+                    combined,
                     they create a field of glowing blobs similar to a technique called Gaussian Splatting.
                   </p>
 
@@ -868,7 +916,8 @@
 
 
             <li class="blog-post-item">
-              <a href="https://aayushma1.medium.com/stable-diffusion-revolutionizing-generative-models-d594443a5d2d" target="_blank">
+              <a href="https://aayushma1.medium.com/stable-diffusion-revolutionizing-generative-models-d594443a5d2d"
+                target="_blank">
 
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog4.png" alt="Design conferences in 2022" loading="lazy">
@@ -885,9 +934,11 @@
                   <h3 class="h3 blog-item-title">Stable Diffusion: Revolutionizing Generative Models</h3>
 
                   <p class="blog-text">
-                    In the rapidly evolving field of generative models, Stable diffusion models have emerged as a groundbreaking technology, 
-                    pushing the boundaries of what’s possible in creating realistic and high-quality data like images, text, audio and video. 
-                    But how do these modern techniques stack up against traditional methods? 
+                    In the rapidly evolving field of generative models, Stable diffusion models have emerged as a
+                    groundbreaking technology,
+                    pushing the boundaries of what’s possible in creating realistic and high-quality data like images,
+                    text, audio and video.
+                    But how do these modern techniques stack up against traditional methods?
                   </p>
 
                 </div>
