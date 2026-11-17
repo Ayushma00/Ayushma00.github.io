@@ -1,5 +1,1252 @@
-MethodInvocationException: 
-Line |
-  16 |  [Console]::Write([System.IO.File]::ReadAllText('index.html'))
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Exception calling "ReadAllText" with "1" argument(s): "Could not find file 'C:\Users\s225078288\Documents\Codex\2026-11-14\plugin-management-plugin-plugin-management-openai-7\index.html'."
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aayushma Pant | AI and Data Engineer</title>
+  <meta name="description" content="Aayushma Pant is an AI and data engineer and researcher based in Sydney, Australia. Her work spans machine learning, computer vision, geospatial data, LLM applications and research." />
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Aayushma_Profile.jpg" alt="Aayushma Pant" >
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Aayushma Pant">Aayushma Pant</h1>
+
+          <p class="title">AI &amp; Data Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:pantaayushma77@gmail.com" target="_blank"
+                class="contact-link">pantaayushma77@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+61494357414" class="contact-link">+61 494357414</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sydney, NSW, Australia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/aayushma-pant/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedIn"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Ayushma00" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://aayushma1.medium.com/" target="_blank" class="social-link">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m an AI and data engineer and researcher based in Sydney. I build practical systems across machine
+            learning, computer vision, geospatial data, and LLM applications. I enjoy taking a problem from the data
+            and early design through to a working tool that people can use.
+          </p>
+
+          <p>
+            I bring three years of computer vision and research engineering experience from South Korea, followed by
+            applied AI and data engineering work in Australia. My recent work includes large-scale geological data
+            pipelines, machine learning models, agentic workflows, and API-based applications. At Deakin University,
+            I completed a fully funded Master of Information Technology by Research and published research at
+            WACV and ECML PKDD. I received the Women in AI Australia and APAC award in the AI in Mining category.
+          </p>
+        </section>
+
+
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/3d_2.svg
+                " alt="3D ICON" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI and Machine Learning</h4>
+
+                <p class="service-item-text">
+                  I build and evaluate machine learning and computer vision systems, from model development to usable applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/AI.svg" alt="AI and Data Science icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Engineering</h4>
+
+                <p class="service-item-text">
+                  I create reliable Python and SQL pipelines for large, complex and geospatial datasets.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/Research.svg" alt="Research and Development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">LLM and Agent Workflows</h4>
+
+                <p class="service-item-text">
+                  I build LLM and agent workflows, including retrieval-augmented generation, integrations and business process automation.</p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/mlops.svg" alt="MLOps icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research and Delivery</h4>
+
+                <p class="service-item-text">
+                  I connect research with practical delivery through evaluation, deployment, documentation and communication.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+      </article>
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume <a href="assets/pdf/Aayushma_Pant_FDE_CV.pdf" target="_blank" aria-label="Download Aayushma Pant's resume">
+              <div style="float:right; width:45px; height:45px;" class="icon-box"><ion-icon
+                  style="width:25px; height:25px;" name="cloud-download"></ion-icon></div>
+            </a></h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">AI &amp; Data Engineer</h4>
+              <h4 class="h5 timeline-item-title">Earth AI, Sydney, Australia</h4>
+              <span>May 2026 - Nov 2026</span>
+              <ul class="bulleted_list timeline-text">
+                <li>Built reusable Python, SQL and DuckDB pipelines to clean and validate 70+ million geological assay records.</li>
+                <li>Developed and evaluated XGBoost and LightGBM mineral-targeting models across 7+ million national grid cells, using Optuna and MLflow.</li>
+                <li>Built feature engineering and spatial labelling workflows for 3D geochemical modelling across 30+ million drillcore records.</li>
+                <li>Integrated a PyTorch anomaly-detection model into an internal FastAPI application, adding interpretable maps, saved results and Linux support while reducing measured startup checks by 87%.</li>
+                <li>Developed and tested agentic AI workflows for task management and company-information retrieval, enabling hourly monitoring and automated updates.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">AI Engineer</h4>
+              <h4 class="h5 timeline-item-title">HyperGen, Geelong, Australia</h4>
+              <span>Jun 2025 - May 2026</span>
+              <ul class="bulleted_list timeline-text">
+                <li>Built Copilot Studio agents and Power Automate flows for timesheets, opportunity tracking, project creation and stakeholder notifications.</li>
+                <li>Designed a multi-user agentic platform using the Claude API and LLM workflows to automate CRM tasks.</li>
+                <li>Built a document intelligence pipeline combining image segmentation, OCR and LLM checks to classify PDFs and verify information against specification files.</li>
+                <li>Deployed a containerised Azure application with MongoDB, search indexing, worker scaling and CI/CD.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Computer Vision Research Engineer</h4>
+              <h4 class="h5 timeline-item-title">Angelswing Inc., Seoul, South Korea</h4>
+              <span>Aug 2021 - Dec 2024</span>
+              <ul class="bulleted_list timeline-text">
+                <li>Built a geospatial machine learning pipeline for aerial ground control point detection, reducing manual data processing by 65%.</li>
+                <li>Developed an aerial image stitching pipeline that improved processing speed by 50% and reduced memory use by 40%.</li>
+                <li>Built a 3D mesh generation prototype using computer graphics and Structure-from-Motion, and a UAV imagery visualisation tool using Three.js.</li>
+                <li>Developed and deployed a machine learning inspection system that improved defect detection accuracy by 60%.</li>
+                <li>Led a research initiative that improved project development efficiency by 20%; presented and trained at industry events reaching 1,000+ professionals.</li>
+              </ul>
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+             <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Deakin University</h4>
+              <h5 class="h4 timeline-item-title">Master of Information Technology (Research)</h5>
+              <span>Jan 2025 - Nov 2026 (Completed)</span>
+
+              <div class="timeline-text">
+               
+                <ul class="bulleted_list">
+                  <li>Awarded a fully funded research scholarship.</li>
+                  <li>Research focus: hyperspectral anomaly detection and machine learning for geoscience.</li>
+                  <li>Graduate Teaching Assistant, Mar 2025 - May 2026: taught database and SQL tutorials, graded assignments and supported students.</li>
+                  <li>Research Assistant: contributed to machine learning research on CEC prediction.</li>
+                  
+                </ul>
+                <!-- <p class="bulleted_list">1. Committee member of the Robotics and Automation Center. </p>
+                  <p class="bulleted_list">2. Certified in multiple courses and received scholarships for academic excellence and accomplishments.</p>
+                  <p class="bulleted_list">3. Conducted workshops on AVR, Arduino, Circuit Design using Kicad, and Artificial Intelligence.</p> -->
+              </div>
+
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Tribhuvan University</h4>
+              <h5 class="h4 timeline-item-title">Bachelor of Electronics and Communication Engineering</h5>
+              <span>Nov 2017 - Apr 2022</span>
+
+              <div class="timeline-text">
+                <ul class="bulleted_list">
+                  <li>First Class Honours; college topper and three-time semester topper.</li>
+                  <li>Committee member of the Robotics and Automation Centre; organised workshops on Arduino, KiCad and AI.</li>
+                </ul>
+                <!-- <p class="bulleted_list">1. Committee member of the Robotics and Automation Center. </p>
+                  <p class="bulleted_list">2. Certified in multiple courses and received scholarships for academic excellence and accomplishments.</p>
+                  <p class="bulleted_list">3. Conducted workshops on AVR, Arduino, Circuit Design using Kicad, and Artificial Intelligence.</p> -->
+              </div>
+
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="ribbon-outline"></ion-icon></div>
+            <h3 class="h3">Awards</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://inaitoday.com/award-winners-revealed-for-women-working-in-ai-across-australia-and-the-asia-pacific-region/" target="_blank" rel="noopener noreferrer">Women in AI Australia and APAC Award, AI in Mining category</a></h4>
+              <span>2026</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Women in STEM Mentor Recognition</h4>
+              <span>For volunteering and promoting technology education among young women</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Academic Excellence Awards</h4>
+              <span>College topper and three-time semester topper</span>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+
+
+
+          <ul class="skills-list content-card">
+            <h4 class="h4 skills-title">Key Tech Skills</h4>
+            <li class="skills-item">
+              <ul class="bulleted_list_small service-item-text">
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>Computer Vision</li>
+                <li>LLM Applications, RAG and Agentic Workflows</li>
+                <li>Geospatial and Remote Sensing Data</li>
+
+              </ul>
+            </li>
+          </ul>
+          <br>
+
+          <ul class="skills-list content-card">
+            <h4 class="h4 skills-title">Programming Languages and Frameworks</h4>
+            <li class="skills-item">
+              <ul class="bulleted_list_small service-item-text">
+                <li>Python</li>
+                <li>SQL and DuckDB</li>
+                <li>PyTorch, TensorFlow and scikit-learn</li>
+                <li>FastAPI and Flask</li>
+                <li>JavaScript</li>
+                <li>LangChain, LangGraph, FAISS and Chroma</li>
+                <li>Prompt engineering and model evaluation</li>
+              </ul>
+            </li>
+          </ul>
+
+          <br>
+          <ul class="skills-list content-card">
+            <h4 class="h4 skills-title">Cloud Stack</h4>
+            <li class="skills-item">
+              <ul class="bulleted_list_small service-item-text">
+                <li>Azure AI and Azure OpenAI</li>
+                <li>AWS: S3, Lambda, API Gateway and ECR</li>
+                <li>Google Cloud: Vertex AI and Cloud Run</li>
+                <li>MongoDB and PostgreSQL</li>
+              </ul>
+            </li>
+          </ul>
+          <br>
+          <ul class="skills-list content-card">
+            <h4 class="h4 skills-title">DevOps/ MLOps Stack</h4>
+            <li class="skills-item">
+              <ul class="bulleted_list_small service-item-text">
+                <li>Docker </li>
+                <li> DVC </li>
+                <li>MLflow and DVC</li>
+                <li>CI/CD and GitHub Actions</li>
+                <li> Kubernetes </li>
+                <li>Copilot Studio and Power Automate</li>
+                <li>Claude API, n8n and Docker Compose</li>
+              </ul>
+            </li>
+          </ul>
+          <br>
+          <ul class="skills-list content-card">
+            <h4 class="h4 skills-title">Soft Skills</h4>
+            <li class="skills-item">
+              <ul class="bulleted_list_small service-item-text">
+                <li>Problem scoping and solution design</li>
+                <li>Clear communication with technical and non-technical teams</li>
+                <li>Research, evaluation and documentation</li>
+                <li>Presentations and technical training</li>
+                <li>Team leadership and collaboration</li>
+              </ul>
+            </li>
+          </ul>
+
+
+        </section>
+
+      </article>
+
+      <article class="publications" data-page="publications">
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Peer-reviewed conference papers</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://doi.org/10.26187/deakin.34277367" target="_blank" rel="noopener noreferrer">Noise-Robust Band Selection via Explainability-Constrained Learning for Hyperspectral Anomaly Detection</a></h4>
+              <span>ECML PKDD 2026 · Springer Lecture Notes in Computer Science, vol. 16950, pp. 53-70</span>
+              <p class="timeline-text">Introduces End-to-End Explainability-Constrained Learning (E2E-ECL), jointly learning band selection and anomaly detection while improving robustness to spectral noise.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://openaccess.thecvf.com/content/WACV2026/html/Pant_DMS2F-HAD_A_Dual-branch_Mamba-based_Spatial-Spectral_Fusion_Network_for_Hyperspectral_Anomaly_WACV_2026_paper.html" target="_blank" rel="noopener noreferrer">DMS2F-HAD: A Dual-branch Mamba-based Spatial-Spectral Fusion Network for Hyperspectral Anomaly Detection</a></h4>
+              <span>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2026)</span>
+              <p class="timeline-text">Presents a dual-branch Mamba model that learns spatial and spectral features for hyperspectral anomaly detection.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Journal articles and preprints</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://doi.org/10.3126/jacem.v11i1.84534" target="_blank" rel="noopener noreferrer">A Review on Aerial Image Classification Techniques for Urban Planning</a></h4>
+              <span>Journal of Advanced College of Engineering and Management, vol. 11, pp. 119-137, 2025</span>
+              <p class="timeline-text">Reviews deep learning approaches for aerial image classification and their use in urban planning.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://arxiv.org/abs/2507.05730" target="_blank" rel="noopener noreferrer">Hyperspectral Anomaly Detection Methods: A Survey and Comparative Study</a></h4>
+              <span>arXiv preprint, 2025</span>
+              <p class="timeline-text">Compares hyperspectral anomaly detection methods across 17 benchmark datasets, discussing accuracy, computational cost and practical trade-offs.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://www.researchgate.net/publication/369107292_Nepali_Voice-Controlled_Home_Automation_System" target="_blank" rel="noopener noreferrer">Nepali Voice-Controlled Home Automation System</a></h4>
+              <span>International Journal of Advanced Engineering, vol. 6, no. 1, pp. 1-11, 2023</span>
+              <p class="timeline-text">Combines Nepali speech recognition, a CNN-LSTM model and MQTT to control home devices.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="ribbon-outline"></ion-icon></div>
+            <h3 class="h3">Award</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://inaitoday.com/award-winners-revealed-for-women-working-in-ai-across-australia-and-the-asia-pacific-region/" target="_blank" rel="noopener noreferrer">Women in AI Australia and APAC Award - AI in Mining</a></h4>
+              <span>2026</span>
+              <p class="timeline-text">Recognised for work applying AI to mining and geological data.</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Work</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/Ayushma00/loan-ml-django-heroku-app" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project1.jpeg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Loan Approval Web Application</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/Ayushma00/django-mail-system-clone" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mail System Clone using Django</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/Ayushma00/human-activity-recognition" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project3.jpeg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Human Activity Recognition Application</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="work">
+              <a href="https://github.com/Ayushma00/django-mail-system-clone" target="_blank">
+
+                <a style="cursor: pointer;" data-toggle="modal" data-target="#ImageStitchingModal">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/project10.png" alt="orizon" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title"> Real-Time Image Stitching</h3>
+
+                  <p class="project-category"> Computer Vision | AI | GIS| Georeferencing</p>
+
+                </a>
+            </li>
+
+
+
+            <div class="modal fade" id="ImageStitchingModal">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content" style="background-color: hsl(240, 1%, 17%); font-family: 'Poppins', sans-serif;">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title" style="color: hsl(45, 54%, 58%);">Image Stitching</h4>
+                    <button type="button" style="color: hsl(45, 54%, 58%);" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body" style="color: hsl(0, 0%, 98%);">
+                    <div class="modal-text">
+                      Image stitching is the process of combining multiple overlapping images to create a single, 
+                      seamless panoramic image or a high-resolution composite.
+                      
+                      Image stitching is widely used for applications such as aerial surveillance, panorama creation, and disaster identification. 
+                      To effectively leverage this technique for disaster identification and rapid surveillance, it's essential to develop a fast and efficient stitching mechanism. 
+                      This project aims to create and implement a streamlined stitching pipeline that delivers high-quality 2D orthomosaic views quickly and georeferences it, offering better performance compared to existing systems like OpenDroneMap, 
+                      Pix4D Mapper, PhotoScan, and OpenMVG, which can take hours to produce results.
+                    
+                      <ul class="bulleted_list ">
+                        <li>Optimized Feature Matching: Implementing or improving algorithms like ORB, SIFT, or SURF for faster and more accurate feature matching across images.</li>
+                        <li>Parallel Processing: Utilize GPU acceleration or multi-core CPU processing to perform tasks like feature detection, matching, and warping simultaneously.</li>
+                        <li>Efficient Warping and Blending: Develop or refine warping and blending techniques that reduce computational complexity while maintaining high-quality results.</li>
+                        <li>Memory Management: Efficiently manage memory to handle large datasets, especially in high-resolution aerial imagery, to prevent bottlenecks.</li>
+                        <li>Georeferencing the Result: Overlay the stitched image/video on the world map.</li>
+                      </ul>
+                    
+                      <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                        <div style="position: relative; width: 100%; max-width: 420px; padding-bottom: 56.25%; margin: 0 auto;">
+                          <iframe src="https://www.youtube.com/embed/PGRH78efsdw" style="position: absolute; top: 0; left: 0; width: 100%; height: 80%; border: none;"></iframe>
+                        </div>
+                        <div style="position: relative; width: 100%; max-width: 420px; padding-bottom: 56.25%; margin: 0 auto;">
+                          <iframe src="https://www.youtube.com/embed/KLRvLQk8pXQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 80%; border: none;"></iframe>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <li class="project-item  active" data-filter-item data-category="work">
+              <a href="https://github.com/Ayushma00/django-mail-system-clone" target="_blank">
+
+                <a style="cursor: pointer;" data-toggle="modal" data-target="#automaticGcpDetection">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/project11.png" alt="orizon" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title"> Automatic GCP Detection</h3>
+
+                  <p class="project-category"> Computer Vision | AI | Devops</p>
+
+                </a>
+            </li>
+
+
+
+            <div class="modal fade" id="automaticGcpDetection">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content" style="background-color: hsl(240, 1%, 17%); font-family: 'Poppins', sans-serif;">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title" style="color: hsl(45, 54%, 58%);">Automatic GCP Detection</h4>
+                    <button type="button" style="color: hsl(45, 54%, 58%);" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body" style="color: hsl(0, 0%, 98%);">
+                    <div class="modal-text">
+                            <p>Ground Control Points  (GCPs) are identifiable and accurately located points on the Earth's surface that serve as
+                            reference points to georeference or rectify imagery, maps, or other geographic data. It plays a crucial role in ensuring the accuracy and precision of geospatial data and is commonly used in applications like satellite imagery analysis, aerial photography, cartography, and geographic information systems (GIS).
+
+                            In aerial images, GCPs are employed with great precision to georeference images, meshes, and textures onto the surfaces of maps. 
+
+                            Our main objective is to detect the GCPs automatically from the given input images and the geoinformation values.
+                          </p>
+                            <p>The Automatic GCP detection AI pipeline mainly uses Images as its data to carry the whole process. 
+                              The raw data is the aerial image of very high resolution (approx 5000*3000 pixels). 
+                              These images have lots of other features like buildings, cranes, towers, cars, trees, roads potholes, etc. as shown in the image (I) which are not our primary concerns.  
+                              The main focus is GCP within the image.
+                              
+                            </p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                              <div style="position: relative; width: 100%; max-width: 420px; margin: 0 auto;">
+                                  <img src="/assets/images/gcp1.png" style="width: 100%; height: auto; border: none;">
+                              </div>
+                              <div style="position: relative; width: 100%; max-width: 420px; margin: 0 auto;">
+                                  <img src="/assets/images/gcp4.png" style="width: 100%; height: auto; border: none;">
+                              </div>
+                          </div>
+
+                            <p>The different steps taken are:</p>
+                            <ul class="bulleted_list">
+                              <li>Data Preprocessing: The whole image is of very high resolution. If the whole images are fed into the AI pipeline to detect GCP (which is very small as compared to the whole image (approx 1-3 pixels) in the above pictures then we will have the following problems:
+                                  <ul>
+                                      <li>Maximum Resources used while model training (both time and memory): More CUDA-enabled resources are needed which cannot be handled by the normal GPU of 4 to 8 GB.</li>
+                                      <li>Highly inaccurate prediction due to smaller bounding box regions in the images: During the Feasibility Test on using it with different models like YOLO, ResNet, and FastRNN gave wrong predictions.</li>
+                                  </ul>
+                                  Following actions were taken for preprocessing:
+                                  <ul>
+                                    <li>Formation of cropped images using the geoinformation</li>
+                                    <li>Data Annotation</li>
+                                    <li>Data Augmentation</li>
+
+                                    
+                                  </ul>
+                              </li>
+                              <li>Model Training and evaluation</li>
+                              <li>Product development: This function is all fully dockerized and when user uploads GCP notify the process throgh SLACK and upload the result to S3</li>
+                              
+                          </ul>
+                    
+                          <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                            <div style="position: relative; width: 100%; max-width: 420px; margin: 0 auto;">
+                                <img src="/assets/images/gcp2.png" style="width: 100%; height: auto; border: none;">
+                            </div>
+                            <div style="position: relative; width: 100%; max-width: 420px; margin: 0 auto;">
+                                <img src="/assets/images/gcp3.png" style="width: 100%; height: auto; border: none;">
+                            </div>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://drive.google.com/file/d/1JhZSXJznqKF0-s0a3_d-w9EJV-icte7S/view?usp=sharing" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project4.webp" alt="deepfake" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Deepfake Audio and Video Detection System</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/Ayushma00/chatter-patter-ai-powered-chatbot" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project9.jpg" alt="chatbot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Chatter-Patter: AI-Powered Chatbot</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://www.researchgate.net/publication/369107292_Nepali_Voice-Controlled_Home_Automation_System"
+                target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project5.jpg" alt="nepali-voice-automation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nepali Voice Controlled Home Automation</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/Ayushma00/django-social-network-app" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project6.jpg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Social Network App</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/Ayushma00/text-mining-and-recommendation-system-for-yelp-dataset"
+                target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Text Mining and Recommendation System</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/Ayushma00/Suduko_Solver_Using_AI" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project7.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sudoku Solver using AI</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blogs</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://aayushma1.medium.com/from-pixels-to-photorealism-the-art-of-3d-gaussian-splatting-fdcdc1a9ac21"
+                target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog5.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Artificial Intelligence</p>
+
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">From Pixels to Photorealism: The Art of 3D Gaussian Splatting</h3>
+
+                  <p class="blog-text">
+                    Imagine watching fireflies glow in a dark field at night. Each firefly emits a light that is
+                    brightest at its
+                    position and fades as you move away. These glowing areas can be represented using 3D Gaussians. When
+                    combined,
+                    they create a field of glowing blobs similar to a technique called Gaussian Splatting.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://aayushma1.medium.com/stable-diffusion-revolutionizing-generative-models-d594443a5d2d"
+                target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog4.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Artificial Intelligence</p>
+
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Stable Diffusion: Revolutionizing Generative Models</h3>
+
+                  <p class="blog-text">
+                    In the rapidly evolving field of generative models, Stable diffusion models have emerged as a
+                    groundbreaking technology,
+                    pushing the boundaries of what’s possible in creating realistic and high-quality data like images,
+                    text, audio and video.
+                    But how do these modern techniques stack up against traditional methods?
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/swlh/quantum-computing-for-machine-learning-24664ee0d301" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog1.jpeg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Machine Learning</p>
+
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Quantum Computing for Machine Learning</h3>
+
+                  <p class="blog-text">
+                    Have you ever wondered about beating the time? And solving a large number of mathematical matrices,
+                    data and queries within just a fraction of second. Then without dilemma, there comes a word
+                    “quantum”.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@aayushma1/gradient-descent-in-machine-learning-614bb3e676d7" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog2.webp" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Machine Learning</p>
+
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Gradient Descent in Machine Learning</h3>
+
+                  <p class="blog-text">
+                    Life is a Gradient Descent. We set up the goals and we gradually move to achieve them from our
+                    current position. Similarly, different events in our lives are influenced by gradient descent. ..
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@aayushma1/principal-component-analysis-pca-99c14bcec674" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog3.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Machine Learning</p>
+
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Principal Component Analysis (PCA) From Scratch</h3>
+
+                  <p class="blog-text">
+                    Data of higher dimensions tend to create sparse matrixes and make it much more difficult to compute,
+                    analyze and visualize. It is therefore very important to reduce the dimensions to minimize redundant
+                    information,..
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+
+
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">For any queries </h3>
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+
+            <a href="mailto:pantaayushma77@gmail.com" target="_blank" class="contact-link">Email Here</a>
+          </div>
+
+          <!-- <form action="https://formspree.io/pantaayushma77@gmail.com" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form> -->
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
