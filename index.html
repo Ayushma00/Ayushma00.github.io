@@ -29,6 +29,22 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    .community { margin: 0 0 32px; }
+    .community-intro { color: var(--light-gray); margin: 0 0 16px; font-size: var(--fs-6); }
+    .community-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .community-story { background: var(--eerie-black-1); border: 1px solid var(--jet); border-radius: 16px; overflow: hidden; }
+    .community-story summary { display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 14px; cursor: pointer; list-style: none; color: var(--white-2); }
+    .community-story summary::-webkit-details-marker { display: none; }
+    .community-story summary:hover, .community-story[open] summary { background: var(--onyx); }
+    .community-story summary:focus-visible { outline: 2px solid var(--orange-yellow-crayola); outline-offset: -3px; }
+    .community-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: var(--jet); }
+    .community-label { display: block; font-size: var(--fs-7); color: var(--light-gray); }
+    .community-toggle { color: var(--orange-yellow-crayola); font-size: 20px; line-height: 1; }
+    .community-story[open] .community-toggle { transform: rotate(45deg); }
+    .community-story p { color: var(--light-gray); padding: 12px 14px 16px; font-size: var(--fs-6); margin: 0; }
+    @media (max-width: 580px) { .community-grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
 
 <body>
@@ -217,6 +233,45 @@
         </section>
 
 
+
+        <section class="community" aria-labelledby="community-title">
+          <h3 class="h3 service-title" id="community-title">Outside the lab</h3>
+          <p class="community-intro">A few stories from volunteering, hosting and mentoring in Nepal and Geelong. Open any card to read more.</p>
+          <div class="community-grid">
+            <details class="community-story">
+              <summary>
+                <span class="community-icon" aria-hidden="true">🎤</span>
+                <span><strong>A mic and a New Year</strong><small class="community-label">The Lounge · Geelong</small></span>
+                <span class="community-toggle" aria-hidden="true">+</span>
+              </summary>
+              <p>I planned and hosted a Nepali New Year celebration for international students and their families, from sorting out the food to taking the mic as we welcomed 2083 Bikram Sambat.</p>
+            </details>
+            <details class="community-story">
+              <summary>
+                <span class="community-icon" aria-hidden="true">🍲</span>
+                <span><strong>Around the table</strong><small class="community-label">The Lounge · Geelong</small></span>
+                <span class="community-toggle" aria-hidden="true">+</span>
+              </summary>
+              <p>Some weeks I cooked community meals, decorated the centre for Christmas or joined in on craft days. I also helped new international students find their feet at Deakin orientation.</p>
+            </details>
+            <details class="community-story">
+              <summary>
+                <span class="community-icon" aria-hidden="true">🎙️</span>
+                <span><strong>Launch night in Geelong</strong><small class="community-label">Nepali Pathshala Geelong</small></span>
+                <span class="community-toggle" aria-hidden="true">+</span>
+              </summary>
+              <p>I helped organise the official launch of Nepali Pathshala Geelong and took the mic as MC. I worked on the run sheet and helped keep the evening moving.</p>
+            </details>
+            <details class="community-story">
+              <summary>
+                <span class="community-icon" aria-hidden="true">🔬</span>
+                <span><strong>Early steps in STEM</strong><small class="community-label">Smart Cheli · Girls in Physics</small></span>
+                <span class="community-toggle" aria-hidden="true">+</span>
+              </summary>
+              <p>I mentored students through Smart Cheli in Nepal. At the Girls in Physics Breakfast at Deakin, I shared how I found my way into STEM and answered students’ questions about where it could take them.</p>
+            </details>
+          </div>
+        </section>
 
         <section class="service">
 
