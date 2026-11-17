@@ -30,6 +30,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>
+    .sidebar-info > .avatar-box {
+      flex: none;
+      width: clamp(72px, 24vw, 150px);
+      height: auto;
+      aspect-ratio: 1;
+      margin: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      background-image: none;
+    }
+    .sidebar-info > .avatar-box > img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
     .community { margin: 0 0 32px; }
     .community-intro { color: var(--light-gray); margin: 0 0 16px; font-size: var(--fs-6); }
     .community-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
